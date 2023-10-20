@@ -40,7 +40,7 @@ function leOperador(op){
 }
 
 function calcular(event) {
-  //event.preventDefault()
+  event.preventDefault()
 
   if (n1 !== "" && n2!== "" && operador != "") {
     switch (operador) {
@@ -70,7 +70,7 @@ function calcular(event) {
     document.getElementById("display").innerHTML = "" + resp
 
     n1 = "" + resp;
-    n2 = ""
-    operador = ""
+    n2 = "";
+    operador = "";
   }
 }
